@@ -25,11 +25,13 @@ a { color: #03a4fb; text-decoration: none; }
 
 a:hover { color: #03a4fb !important; text-decoration: none !important; border-bottom: 1px dotted #03a4fb; }
 
+.about { width: 100%; max-width: 200px; height: 100%; border-radius: 50%; margin-left: auto; margin-right: 0; }
+
 .post-list { text-align: center; }
 
 .post-box { padding-top: 2em; padding-bottom: 2em; }
 
-.post-title { font-size: 20px !important; color: #abc0ca !important; }
+.post-title { font-size: 22px !important; color: green !important; }
 
 .post-excerpt { color: white !important; padding-top: 0.5em; padding-bottom: 0.3em; }
 

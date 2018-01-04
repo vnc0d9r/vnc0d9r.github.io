@@ -3,14 +3,13 @@ layout: page
 title: About
 permalink: /about/
 ---
-<div class="man-title">
-  HACKING WITH Vnc0d9r
-</div>
 <div class="manual manual-title">
   About Me
 </div>
 <p>
+  <img class="about" src="https://www.elevenfifty.org/wp-content/uploads/2017/09/coder-traits.png"/>
   <div class="manual-content">
-    Giỏi thì tìm đi :))
+    Tôi là lập trình viên mới bước chân vào thế giới hacking rộng lớn!
+    Nếu bạn có thể, hãy liên hệ với tôi <3
   </div>
 </p>
