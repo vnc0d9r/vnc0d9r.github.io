@@ -6,8 +6,6 @@ permalink: /download/
 
 <span class="page-tagline">Danh sách tool cho anh em</span>
 
-
-
 <div class="post-content-download">
   <p>
     <br />
