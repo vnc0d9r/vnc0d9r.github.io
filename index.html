@@ -1,25 +1,44 @@
 ---
 layout: default
 ---
-<main class="container">
-  <div class="row">
-    <div class="col-2">
-      <h1>{{ site.title }}</h1>
-      <p class="lead">
-        <br/>A place for off-topic blog entries.
-      </p>
-      <article>
-        <h1>Posts</h1>
-      </article>
-      {% for post in paginator.posts %}
-      <article>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.excerpt }}</p>
-        <a href="{{ site.baseurl }}/{{ post.url }}">[ Read ]</a>
-      </article>
-      {% endfor %}
-      {% include buttons.html %}
+
+<section>
+  <div class="jumbotron">
+    <div class="container">
+      {{site.description}}
+
     </div>
-    {% include sidebar.html %}
+
+</div>
+</section>
+
+<section id="page-content">
+  <div class="container">
+    <div class="post-list">
+  {%  for post in site.posts %}
+  <div class="post-box">
+    <div class="post-title">
+    <a class="post-title" href="{{post.url | prepend:site.baseurl }}" > {{ post.title }}</a>
+    </div>
+    <div class="post-excerpt">
+      {{ post.content | strip_html | truncatewords:20}}
+    </div>
+    <div class="posted">
+      posted on
+      <span class="posted-on">
+
+        {{ post.date | date: "%A, %B %-d, %Y" }}
+      </span>
+      <span class="in">
+        in
+      </span>
+      <span class="categories-on">
+        {% for category in post.categories%}
+        {{category}} &nbsp;{% if forloop.last %}{% else %},{% endif %}
+        {% endfor %}
+      </span>
+    </div>
   </div>
-</main>
+  {% endfor %}
+  </div>
+</section>

@@ -1,270 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal Text</title>
-    <description>Hacking and security website</description>
-    <link>http://localhost:4000//</link>
-    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Jan 2018 16:37:41 +0700</pubDate>
-    <lastBuildDate>Thu, 04 Jan 2018 16:37:41 +0700</lastBuildDate>
+    <title>Hemang Kumar</title>
+    <description>&lt;h3&gt;Hello, world!&lt;/h3&gt;&lt;h1&gt;DevJournal&lt;/h1&gt;&lt;h3&gt;Awesome Jekyll Theme for Developers!&lt;/h3&gt;Hope you like it!</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 04 Jan 2018 16:53:12 +0700</pubDate>
+    <lastBuildDate>Thu, 04 Jan 2018 16:53:12 +0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
-        <title>Minimal Text</title>
-        <description>&lt;p&gt;Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec iaculis nisi. Quisque non nisl eu leo ultrices rhoncus. Pellentesque at euismod est. Pellentesque ac nisi semper, molestie risus vitae, ullamcorper augue. Fusce non eleifend massa, vel mattis urna. Morbi facilisis rutrum eleifend.
-&lt;!-- more --&gt;
- Mauris a molestie neque. Aliquam non malesuada nisi, a sodales purus. Nam molestie faucibus sapien eu euismod. Sed scelerisque ornare euismod. In tincidunt est vel pharetra convallis. Praesent vitae nisi odio.&lt;/p&gt;
+        <title>Or maybe give them a read :)</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;h2 id=&quot;nunc&quot;&gt;Nunc&lt;/h2&gt;
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;h2 id=&quot;maecenas&quot;&gt;Maecenas&lt;/h2&gt;
-&lt;p&gt;Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;aenean&quot;&gt;Aenean&lt;/h2&gt;
-&lt;p&gt;Aenean molestie, augue at semper imperdiet, ante metus cursus turpis, vitae placerat ligula velit at lacus. Nunc magna elit, sollicitudin et elit nec, hendrerit porta odio. Aliquam congue, lacus non sodales venenatis, lectus justo tincidunt leo, scelerisque ultricies libero nisi sed lorem. Donec eu facilisis eros. Nunc eu diam lacus. Ut at leo ornare, pulvinar lacus a, cursus dolor. Sed tincidunt dignissim purus, at blandit ante. Duis condimentum dui quis pretium vehicula. Ut fermentum justo vitae mattis dapibus. Quisque vulputate nunc sem, at dignissim lectus interdum vel. Donec finibus augue sit amet ipsum convallis, a sollicitudin ante convallis. Pellentesque auctor felis lacus, vitae mollis orci bibendum at. Nulla feugiat eu ipsum ut ullamcorper. Mauris viverra mi bibendum mollis egestas.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-        <pubDate>Thu, 07 Dec 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000//2017/12/07/minimal/</link>
-        <guid isPermaLink="true">http://localhost:4000//2017/12/07/minimal/</guid>
+        <pubDate>Thu, 12 May 2016 23:31:43 +0700</pubDate>
+        <link>http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll3.html</guid>
         
-        <category>Curabitur</category>
         
-        <category>Dolor</category>
+        <category>jekyll</category>
         
-        <category>Id</category>
-        
-        <category>Facilisis</category>
-        
+        <category>update</category>
         
       </item>
     
       <item>
-        <title>Let's Talk</title>
-        <description>&lt;p&gt;Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec iaculis nisi. Quisque non nisl eu leo ultrices rhoncus. Pellentesque at euismod est. Pellentesque ac nisi semper, molestie risus vitae, ullamcorper augue. Fusce non eleifend massa, vel mattis urna. Morbi facilisis rutrum eleifend.
-&lt;!-- more --&gt;
- Mauris a molestie neque. Aliquam non malesuada nisi, a sodales purus. Nam molestie faucibus sapien eu euismod. Sed scelerisque ornare euismod. In tincidunt est vel pharetra convallis. Praesent vitae nisi odio.&lt;/p&gt;
+        <title>So you should get rid of them!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;h2 id=&quot;nunc&quot;&gt;Nunc&lt;/h2&gt;
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;h2 id=&quot;maecenas&quot;&gt;Maecenas&lt;/h2&gt;
-&lt;p&gt;Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;aenean&quot;&gt;Aenean&lt;/h2&gt;
-&lt;p&gt;Aenean molestie, augue at semper imperdiet, ante metus cursus turpis, vitae placerat ligula velit at lacus. Nunc magna elit, sollicitudin et elit nec, hendrerit porta odio. Aliquam congue, lacus non sodales venenatis, lectus justo tincidunt leo, scelerisque ultricies libero nisi sed lorem. Donec eu facilisis eros. Nunc eu diam lacus. Ut at leo ornare, pulvinar lacus a, cursus dolor. Sed tincidunt dignissim purus, at blandit ante. Duis condimentum dui quis pretium vehicula. Ut fermentum justo vitae mattis dapibus. Quisque vulputate nunc sem, at dignissim lectus interdum vel. Donec finibus augue sit amet ipsum convallis, a sollicitudin ante convallis. Pellentesque auctor felis lacus, vitae mollis orci bibendum at. Nulla feugiat eu ipsum ut ullamcorper. Mauris viverra mi bibendum mollis egestas.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-        <pubDate>Wed, 06 Dec 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000//2017/12/06/lets-talk/</link>
-        <guid isPermaLink="true">http://localhost:4000//2017/12/06/lets-talk/</guid>
+        <pubDate>Thu, 12 May 2016 23:31:43 +0700</pubDate>
+        <link>http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll2.html</guid>
         
-        <category>Curabitur</category>
         
-        <category>Dolor</category>
+        <category>jekyll</category>
         
-        <category>Id</category>
-        
-        <category>Facilisis</category>
-        
+        <category>update</category>
         
       </item>
     
       <item>
-        <title>Thing Tutorial</title>
-        <description>&lt;p&gt;Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec iaculis nisi. Quisque non nisl eu leo ultrices rhoncus. Pellentesque at euismod est. Pellentesque ac nisi semper, molestie risus vitae, ullamcorper augue. Fusce non eleifend massa, vel mattis urna. Morbi facilisis rutrum eleifend.
-&lt;!-- more --&gt;
- Mauris a molestie neque. Aliquam non malesuada nisi, a sodales purus. Nam molestie faucibus sapien eu euismod. Sed scelerisque ornare euismod. In tincidunt est vel pharetra convallis. Praesent vitae nisi odio.&lt;/p&gt;
+        <title>Ya I know you loved this theme!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;h2 id=&quot;nunc&quot;&gt;Nunc&lt;/h2&gt;
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;h2 id=&quot;maecenas&quot;&gt;Maecenas&lt;/h2&gt;
-&lt;p&gt;Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;aenean&quot;&gt;Aenean&lt;/h2&gt;
-&lt;p&gt;Aenean molestie, augue at semper imperdiet, ante metus cursus turpis, vitae placerat ligula velit at lacus. Nunc magna elit, sollicitudin et elit nec, hendrerit porta odio. Aliquam congue, lacus non sodales venenatis, lectus justo tincidunt leo, scelerisque ultricies libero nisi sed lorem. Donec eu facilisis eros. Nunc eu diam lacus. Ut at leo ornare, pulvinar lacus a, cursus dolor. Sed tincidunt dignissim purus, at blandit ante. Duis condimentum dui quis pretium vehicula. Ut fermentum justo vitae mattis dapibus. Quisque vulputate nunc sem, at dignissim lectus interdum vel. Donec finibus augue sit amet ipsum convallis, a sollicitudin ante convallis. Pellentesque auctor felis lacus, vitae mollis orci bibendum at. Nulla feugiat eu ipsum ut ullamcorper. Mauris viverra mi bibendum mollis egestas.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-        <pubDate>Tue, 05 Dec 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000//2017/12/05/tutorial-on-thing/</link>
-        <guid isPermaLink="true">http://localhost:4000//2017/12/05/tutorial-on-thing/</guid>
+        <pubDate>Thu, 12 May 2016 23:31:43 +0700</pubDate>
+        <link>http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll11.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll11.html</guid>
         
-        <category>Curabitur</category>
         
-        <category>Dolor</category>
+        <category>jekyll</category>
         
-        <category>Id</category>
-        
-        <category>Facilisis</category>
-        
+        <category>update</category>
         
       </item>
     
       <item>
-        <title>My Post</title>
-        <description>&lt;p&gt;Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec iaculis nisi. Quisque non nisl eu leo ultrices rhoncus. Pellentesque at euismod est. Pellentesque ac nisi semper, molestie risus vitae, ullamcorper augue. Fusce non eleifend massa, vel mattis urna. Morbi facilisis rutrum eleifend.
-&lt;!-- more --&gt;
- Mauris a molestie neque. Aliquam non malesuada nisi, a sodales purus. Nam molestie faucibus sapien eu euismod. Sed scelerisque ornare euismod. In tincidunt est vel pharetra convallis. Praesent vitae nisi odio.&lt;/p&gt;
+        <title>Not a bad idea!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;h2 id=&quot;nunc&quot;&gt;Nunc&lt;/h2&gt;
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;h2 id=&quot;maecenas&quot;&gt;Maecenas&lt;/h2&gt;
-&lt;p&gt;Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;aenean&quot;&gt;Aenean&lt;/h2&gt;
-&lt;p&gt;Aenean molestie, augue at semper imperdiet, ante metus cursus turpis, vitae placerat ligula velit at lacus. Nunc magna elit, sollicitudin et elit nec, hendrerit porta odio. Aliquam congue, lacus non sodales venenatis, lectus justo tincidunt leo, scelerisque ultricies libero nisi sed lorem. Donec eu facilisis eros. Nunc eu diam lacus. Ut at leo ornare, pulvinar lacus a, cursus dolor. Sed tincidunt dignissim purus, at blandit ante. Duis condimentum dui quis pretium vehicula. Ut fermentum justo vitae mattis dapibus. Quisque vulputate nunc sem, at dignissim lectus interdum vel. Donec finibus augue sit amet ipsum convallis, a sollicitudin ante convallis. Pellentesque auctor felis lacus, vitae mollis orci bibendum at. Nulla feugiat eu ipsum ut ullamcorper. Mauris viverra mi bibendum mollis egestas.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-        <pubDate>Mon, 04 Dec 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000//2017/12/04/my-post/</link>
-        <guid isPermaLink="true">http://localhost:4000//2017/12/04/my-post/</guid>
+        <pubDate>Thu, 12 May 2016 23:31:43 +0700</pubDate>
+        <link>http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll10.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll10.html</guid>
         
-        <category>Curabitur</category>
         
-        <category>Dolor</category>
+        <category>jekyll</category>
         
-        <category>Id</category>
-        
-        <category>Facilisis</category>
-        
+        <category>update</category>
         
       </item>
     
       <item>
-        <title>Another Post</title>
-        <description>&lt;p&gt;Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec iaculis nisi. Quisque non nisl eu leo ultrices rhoncus. Pellentesque at euismod est. Pellentesque ac nisi semper, molestie risus vitae, ullamcorper augue. Fusce non eleifend massa, vel mattis urna. Morbi facilisis rutrum eleifend.
-&lt;!-- more --&gt;
- Mauris a molestie neque. Aliquam non malesuada nisi, a sodales purus. Nam molestie faucibus sapien eu euismod. Sed scelerisque ornare euismod. In tincidunt est vel pharetra convallis. Praesent vitae nisi odio.&lt;/p&gt;
+        <title>Basically these are all dummy posts, Really!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;h2 id=&quot;nunc&quot;&gt;Nunc&lt;/h2&gt;
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;h2 id=&quot;maecenas&quot;&gt;Maecenas&lt;/h2&gt;
-&lt;p&gt;Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;aenean&quot;&gt;Aenean&lt;/h2&gt;
-&lt;p&gt;Aenean molestie, augue at semper imperdiet, ante metus cursus turpis, vitae placerat ligula velit at lacus. Nunc magna elit, sollicitudin et elit nec, hendrerit porta odio. Aliquam congue, lacus non sodales venenatis, lectus justo tincidunt leo, scelerisque ultricies libero nisi sed lorem. Donec eu facilisis eros. Nunc eu diam lacus. Ut at leo ornare, pulvinar lacus a, cursus dolor. Sed tincidunt dignissim purus, at blandit ante. Duis condimentum dui quis pretium vehicula. Ut fermentum justo vitae mattis dapibus. Quisque vulputate nunc sem, at dignissim lectus interdum vel. Donec finibus augue sit amet ipsum convallis, a sollicitudin ante convallis. Pellentesque auctor felis lacus, vitae mollis orci bibendum at. Nulla feugiat eu ipsum ut ullamcorper. Mauris viverra mi bibendum mollis egestas.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-        <pubDate>Sun, 03 Dec 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000//2017/12/03/another-post/</link>
-        <guid isPermaLink="true">http://localhost:4000//2017/12/03/another-post/</guid>
+        <pubDate>Thu, 12 May 2016 23:31:43 +0700</pubDate>
+        <link>http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll1.html</guid>
         
-        <category>Curabitur</category>
         
-        <category>Dolor</category>
+        <category>jekyll</category>
         
-        <category>Id</category>
-        
-        <category>Facilisis</category>
-        
+        <category>update</category>
         
       </item>
     
       <item>
-        <title>Even Better</title>
-        <description>&lt;p&gt;Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec iaculis nisi. Quisque non nisl eu leo ultrices rhoncus. Pellentesque at euismod est. Pellentesque ac nisi semper, molestie risus vitae, ullamcorper augue. Fusce non eleifend massa, vel mattis urna. Morbi facilisis rutrum eleifend.
-&lt;!-- more --&gt;
- Mauris a molestie neque. Aliquam non malesuada nisi, a sodales purus. Nam molestie faucibus sapien eu euismod. Sed scelerisque ornare euismod. In tincidunt est vel pharetra convallis. Praesent vitae nisi odio.&lt;/p&gt;
+        <title>Learning to use Jekyll</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;h2 id=&quot;nunc&quot;&gt;Nunc&lt;/h2&gt;
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;h2 id=&quot;maecenas&quot;&gt;Maecenas&lt;/h2&gt;
-&lt;p&gt;Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;aenean&quot;&gt;Aenean&lt;/h2&gt;
-&lt;p&gt;Aenean molestie, augue at semper imperdiet, ante metus cursus turpis, vitae placerat ligula velit at lacus. Nunc magna elit, sollicitudin et elit nec, hendrerit porta odio. Aliquam congue, lacus non sodales venenatis, lectus justo tincidunt leo, scelerisque ultricies libero nisi sed lorem. Donec eu facilisis eros. Nunc eu diam lacus. Ut at leo ornare, pulvinar lacus a, cursus dolor. Sed tincidunt dignissim purus, at blandit ante. Duis condimentum dui quis pretium vehicula. Ut fermentum justo vitae mattis dapibus. Quisque vulputate nunc sem, at dignissim lectus interdum vel. Donec finibus augue sit amet ipsum convallis, a sollicitudin ante convallis. Pellentesque auctor felis lacus, vitae mollis orci bibendum at. Nulla feugiat eu ipsum ut ullamcorper. Mauris viverra mi bibendum mollis egestas.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-        <pubDate>Sat, 02 Dec 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000//2017/12/02/even-better/</link>
-        <guid isPermaLink="true">http://localhost:4000//2017/12/02/even-better/</guid>
+        <pubDate>Thu, 12 May 2016 23:31:43 +0700</pubDate>
+        <link>http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll0.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll0.html</guid>
         
-        <category>Curabitur</category>
         
-        <category>Dolor</category>
+        <category>jekyll</category>
         
-        <category>Id</category>
-        
-        <category>Facilisis</category>
-        
+        <category>update</category>
         
       </item>
     
       <item>
-        <title>Something Awesome!</title>
-        <description>&lt;p&gt;Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec iaculis nisi. Quisque non nisl eu leo ultrices rhoncus. Pellentesque at euismod est. Pellentesque ac nisi semper, molestie risus vitae, ullamcorper augue. Fusce non eleifend massa, vel mattis urna. Morbi facilisis rutrum eleifend.
-&lt;!-- more --&gt;
- Mauris a molestie neque. Aliquam non malesuada nisi, a sodales purus. Nam molestie faucibus sapien eu euismod. Sed scelerisque ornare euismod. In tincidunt est vel pharetra convallis. Praesent vitae nisi odio.&lt;/p&gt;
+        <title>This is first post!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;h2 id=&quot;nunc&quot;&gt;Nunc&lt;/h2&gt;
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;h2 id=&quot;maecenas&quot;&gt;Maecenas&lt;/h2&gt;
-&lt;p&gt;Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;aenean&quot;&gt;Aenean&lt;/h2&gt;
-&lt;p&gt;Aenean molestie, augue at semper imperdiet, ante metus cursus turpis, vitae placerat ligula velit at lacus. Nunc magna elit, sollicitudin et elit nec, hendrerit porta odio. Aliquam congue, lacus non sodales venenatis, lectus justo tincidunt leo, scelerisque ultricies libero nisi sed lorem. Donec eu facilisis eros. Nunc eu diam lacus. Ut at leo ornare, pulvinar lacus a, cursus dolor. Sed tincidunt dignissim purus, at blandit ante. Duis condimentum dui quis pretium vehicula. Ut fermentum justo vitae mattis dapibus. Quisque vulputate nunc sem, at dignissim lectus interdum vel. Donec finibus augue sit amet ipsum convallis, a sollicitudin ante convallis. Pellentesque auctor felis lacus, vitae mollis orci bibendum at. Nulla feugiat eu ipsum ut ullamcorper. Mauris viverra mi bibendum mollis egestas.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-        <pubDate>Fri, 01 Dec 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000//2017/12/01/something-awesome/</link>
-        <guid isPermaLink="true">http://localhost:4000//2017/12/01/something-awesome/</guid>
+        <pubDate>Thu, 12 May 2016 23:31:43 +0700</pubDate>
+        <link>http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll.html</guid>
         
-        <category>Curabitur</category>
         
-        <category>Dolor</category>
+        <category>jekyll</category>
         
-        <category>Id</category>
-        
-        <category>Facilisis</category>
-        
+        <category>update</category>
         
       </item>
     

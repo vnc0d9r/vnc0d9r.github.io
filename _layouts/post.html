@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-{% assign post = page %}
-<main class="container">
-    <div class="row">
-        <div class="col-2">
-            <a href="{{ site.baseurl }}/">[ Home ]</a>
-            <article>
-                <h1>{{ post.title }}</h1>
-                <small>{% include post_date.html %}</small>
-                <p>{{ content }}</p>
-            </article>
-            {% include buttons.html %}
-        </div>
-        {% include post_sidebar.html %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="post-title-main" itemprop="name headline">{{ page.title }}</h1>
+      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+      
     </div>
-</main>
+
+</div>
+
+
+  <div class="post-content container" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
