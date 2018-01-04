@@ -1,8 +1,5 @@
-Demo: [http://webjeda.com/gatok](http://webjeda.com/gatok)
+# Minimal Text
 
-## Installation
-* Fork the repository
-* Go to settings and set Github Pages source as master.
-* Your new site should be ready.
+Minimal Text is a clean and lightweight Jekyll Theme
 
-For more themes visit - [https://jekyll-themes.com](https://jekyll-themes.com)
+![screenshot](screenshot.jpg)
