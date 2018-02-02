@@ -5,31 +5,43 @@
     <description>&lt;h1&gt;Vnc0d9r&lt;/h1&gt;&lt;h3&gt;Tổng hợp kiến thức về  an toàn thông tin&lt;/h3&gt;Thấy hay thì chia sẻ nhé :3!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Jan 2018 19:48:28 +0700</pubDate>
-    <lastBuildDate>Thu, 04 Jan 2018 19:48:28 +0700</lastBuildDate>
+    <pubDate>Fri, 02 Feb 2018 23:16:29 +0700</pubDate>
+    <lastBuildDate>Fri, 02 Feb 2018 23:16:29 +0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
-        <title>This is first post!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Biên dịch chương trình trên c</title>
+        <description>&lt;p&gt;Nếu là một lập trình viên, ai cũng nghe qua về trình biên dịch cũng như cách biên dịch một chương trình nhưng chắc cũng ít bạn iết cụ thể thì biên dịch là quá trình diễn ra như thế nào vì đơn giản chúng ta chỉ cần ấn nút chạy hoặc gõ một dòng lệnh đơn giản. Hôm nay mình sẽ có một bài viết cụ thể xem biên dịch một đoạn mã ngôn ngữ c thành chương trình chạy trải qua những bước gì.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Để bắt đầu, ta cùng xem một đoạn mã đơn giản và quen thuộc như sau:&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello, world&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;chương trình trên in ra một đoãn text “hello, world” ra ngoài mà hình. Đoạn code này được tôi lưu trên một file tên &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;11-information-is-bits--context&quot;&gt;1.1 Information is Bits + Context&lt;/h2&gt;
+
+&lt;p&gt;Chương trình &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt; của chúng ta bắt đầu vòng đời của nó như là một &lt;code class=&quot;highlighter-rouge&quot;&gt;source program hay source file&lt;/code&gt; (ở đây chính là file &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt;). Source program này là một chuỗi các &lt;code class=&quot;highlighter-rouge&quot;&gt;bit&lt;/code&gt; 0 và 1 được tổ chức thành các nhóm 8 bit một được gọi là &lt;code class=&quot;highlighter-rouge&quot;&gt;byte&lt;/code&gt;, mỗi byte biểu diễn một kí tự trong chương trình. Các hệ thống bây giờ biểu diễ n các kí tự thông qua chuẩn &lt;code class=&quot;highlighter-rouge&quot;&gt;ASCII&lt;/code&gt;. Chương trình trên có thể được biểu diễn dười dạng mã ASCII như sau:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://sv1.upsieutoc.com/2018/02/02/Screenshot-from-2018-02-02-22-29-56.png&quot; alt=&quot;Hình 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Như chúng ta thầy mỗi byte có một giá trị nguyên, tương ứng với một ký tự được lưu trữ trên file. Loại file này được gọi là &lt;code class=&quot;highlighter-rouge&quot;&gt;text file&lt;/code&gt; vì nó chỉ chứa các kí tự đơn thuần, một số loại file được viết đến với tên gọi &lt;code class=&quot;highlighter-rouge&quot;&gt;binary files&lt;/code&gt;. Việc biểu diễn file &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt; minh họa một ý tưởng cơ bản là mọi thông tin có trong hệ thống bao gồm file trên đĩa, chương trình được lưu trữ trên bộ nhớ, dữ liệu người dùng lưu trữ trên bộ nhớ, dữ liệu được luân chuyển thông qua mạng đều được biểu diễn thông qua &lt;code class=&quot;highlighter-rouge&quot;&gt;bunch of bits&lt;/code&gt; mà như trường hợp trên là một &lt;code class=&quot;highlighter-rouge&quot;&gt;byte&lt;/code&gt;, chỉ duy nhất sự khác biệt là tùy vào ngữ cảnh của dữ liệu được hiển thị ra cho chúng ta, ví dụ như cùng một chuối byte nhưng trong trường hợp này là số nguyên, trong khi trường hợp khác là số thập phân, kí tự hay chỉ lệnh. Chúng ta phải hiểu cách mà máy biểu diễn dữ liệu vì nó không giống với cách của con người.&lt;/p&gt;
+
+&lt;h2 id=&quot;12-sự-chuyển-đổi-của-chương-trình&quot;&gt;1.2 Sự chuyển đổi của chương trình&lt;/h2&gt;
+
+&lt;p&gt;Chương trình &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt; được bắt đầu như là một chương trình c bậc cao (high-level c program) bởi vì nó có thể  được đọc và hiểu bởi con người (đây là dạng đầu tiên). Tuy nhiên để có thể chạy chương trình này trên hệ thống nó cần được chuyển đổi sang một dạng bậc thấp gọi là &lt;code class=&quot;highlighter-rouge&quot;&gt;machine-language&lt;/code&gt; hay chính là mã máy bao gồm một tập các lệnh. Gọi là bậc thấp vì nó khó có thể đọc và hiểu bởi con người nhưng lại rất dễ dàng đối với máy. Tập lệnh này sau đó được đóng gói duới dạng &lt;code class=&quot;highlighter-rouge&quot;&gt;executable object program&lt;/code&gt; và lưu trữ dưới dạng &lt;code class=&quot;highlighter-rouge&quot;&gt;binary file &lt;/code&gt; trên đĩa cứng. Việc chuyển đổi này thông qua một chương trình gọi là trình biên dịch, trên các hệ thống linux ta có thể biên dịch một chương trình c thông qua lệnh sau:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;linux&amp;gt; gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; hello hello.c&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://sv1.upsieutoc.com/2018/02/02/imagecbfcf4ee122224b9.png&quot; alt=&quot;Hình 2&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 12 May 2016 23:31:43 +0700</pubDate>
-        <link>http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/12/welcome-to-jekyll.html</guid>
+        <pubDate>Fri, 02 Feb 2018 00:49:43 +0700</pubDate>
+        <link>http://localhost:4000/programming/2018/02/02/bien-dich-chuong-trinh-tren-c.html</link>
+        <guid isPermaLink="true">http://localhost:4000/programming/2018/02/02/bien-dich-chuong-trinh-tren-c.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>programming</category>
         
       </item>
     

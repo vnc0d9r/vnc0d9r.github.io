@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Vnc0d9r" property="og:site_name">
+
+  <meta content="Biên dịch chương trình trên c" property="og:title">
+
+
+  <meta content="article" property="og:type">
+
+
+  <meta content="<h1>Vnc0d9r</h1><h3>Tổng hợp kiến thức về  an toàn thông tin</h3>Thấy hay thì chia sẻ nhé :3!" property="og:description">
+
+
+  <meta content="http://localhost:4000/programming/2018/02/02/bien-dich-chuong-trinh-tren-c.html" property="og:url">
+
+
+  <meta content="2018-02-02T00:49:43+07:00" property="article:published_time">
+  <meta content="http://localhost:4000/about/" property="article:author">
+
+
+  <meta property="og:image" content="">
+
+
+  
+  <meta content="programming" property="article:section">
+  
+
+
+  
+
+  <title>Biên dịch chương trình trên c</title>
+  <meta name="description" content="Nếu là một lập trình viên, ai cũng nghe qua về trình biên dịch cũng như cách biên dịch một chương trình nhưng chắc cũng ít bạn iết cụ thể thì biên dịch là qu...">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/main.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Gentium+Basic:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
+  <link rel="canonical" href="http://localhost:4000/programming/2018/02/02/bien-dich-chuong-trinh-tren-c.html">
+  <link rel="alternate" type="application/rss+xml" title="Vnc0d9r" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body>
+<!--<a href="https://github.com/vnc0d9r"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 9999;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+-->
+<section>
+<nav class="navbar navbar-default navbar-fixed-top">
+
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Vnc0d9r</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        
+        <li><a href="/about/">About</a></li>
+
+        
+
+        
+        
+        <li><a href="/download/">Download</a></li>
+
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+
+
+      </ul>
+
+    <!--  <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Know More!</a></li>
+
+      </ul>-->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</section>
+
+<section>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="post-title-main" itemprop="name headline">Biên dịch chương trình trên c</h1>
+      <p class="post-meta"><time datetime="2018-02-02T00:49:43+07:00" itemprop="datePublished">Feb 2, 2018</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">vnc0d9r</span></span></p>
+      
+    </div>
+
+</div>
+
+
+  <div class="post-content container" itemprop="articleBody">
+    <p>Nếu là một lập trình viên, ai cũng nghe qua về trình biên dịch cũng như cách biên dịch một chương trình nhưng chắc cũng ít bạn iết cụ thể thì biên dịch là quá trình diễn ra như thế nào vì đơn giản chúng ta chỉ cần ấn nút chạy hoặc gõ một dòng lệnh đơn giản. Hôm nay mình sẽ có một bài viết cụ thể xem biên dịch một đoạn mã ngôn ngữ c thành chương trình chạy trải qua những bước gì.</p>
+
+<p>Để bắt đầu, ta cùng xem một đoạn mã đơn giản và quen thuộc như sau:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;<br data-jekyll-commonmark-ghpages="" /></span><br data-jekyll-commonmark-ghpages="" /><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span><br data-jekyll-commonmark-ghpages="" /><span class="p">{</span><br data-jekyll-commonmark-ghpages="" />    <span class="n">printf</span><span class="p">(</span><span class="s">"hello, world</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span><br data-jekyll-commonmark-ghpages="" /><span class="p">}</span></code></pre></figure>
+
+<p>chương trình trên in ra một đoãn text “hello, world” ra ngoài mà hình. Đoạn code này được tôi lưu trên một file tên <code class="highlighter-rouge">hello.c</code></p>
+
+<h2 id="11-information-is-bits--context">1.1 Information is Bits + Context</h2>
+
+<p>Chương trình <code class="highlighter-rouge">hello</code> của chúng ta bắt đầu vòng đời của nó như là một <code class="highlighter-rouge">source program hay source file</code> (ở đây chính là file <code class="highlighter-rouge">hello.c</code>). Source program này là một chuỗi các <code class="highlighter-rouge">bit</code> 0 và 1 được tổ chức thành các nhóm 8 bit một được gọi là <code class="highlighter-rouge">byte</code>, mỗi byte biểu diễn một kí tự trong chương trình. Các hệ thống bây giờ biểu diễ n các kí tự thông qua chuẩn <code class="highlighter-rouge">ASCII</code>. Chương trình trên có thể được biểu diễn dười dạng mã ASCII như sau:</p>
+
+<p><img src="http://sv1.upsieutoc.com/2018/02/02/Screenshot-from-2018-02-02-22-29-56.png" alt="Hình 1" /></p>
+
+<p>Như chúng ta thầy mỗi byte có một giá trị nguyên, tương ứng với một ký tự được lưu trữ trên file. Loại file này được gọi là <code class="highlighter-rouge">text file</code> vì nó chỉ chứa các kí tự đơn thuần, một số loại file được viết đến với tên gọi <code class="highlighter-rouge">binary files</code>. Việc biểu diễn file <code class="highlighter-rouge">hello.c</code> minh họa một ý tưởng cơ bản là mọi thông tin có trong hệ thống bao gồm file trên đĩa, chương trình được lưu trữ trên bộ nhớ, dữ liệu người dùng lưu trữ trên bộ nhớ, dữ liệu được luân chuyển thông qua mạng đều được biểu diễn thông qua <code class="highlighter-rouge">bunch of bits</code> mà như trường hợp trên là một <code class="highlighter-rouge">byte</code>, chỉ duy nhất sự khác biệt là tùy vào ngữ cảnh của dữ liệu được hiển thị ra cho chúng ta, ví dụ như cùng một chuối byte nhưng trong trường hợp này là số nguyên, trong khi trường hợp khác là số thập phân, kí tự hay chỉ lệnh. Chúng ta phải hiểu cách mà máy biểu diễn dữ liệu vì nó không giống với cách của con người.</p>
+
+<h2 id="12-sự-chuyển-đổi-của-chương-trình">1.2 Sự chuyển đổi của chương trình</h2>
+
+<p>Chương trình <code class="highlighter-rouge">hello</code> được bắt đầu như là một chương trình c bậc cao (high-level c program) bởi vì nó có thể  được đọc và hiểu bởi con người (đây là dạng đầu tiên). Tuy nhiên để có thể chạy chương trình này trên hệ thống nó cần được chuyển đổi sang một dạng bậc thấp gọi là <code class="highlighter-rouge">machine-language</code> hay chính là mã máy bao gồm một tập các lệnh. Gọi là bậc thấp vì nó khó có thể đọc và hiểu bởi con người nhưng lại rất dễ dàng đối với máy. Tập lệnh này sau đó được đóng gói duới dạng <code class="highlighter-rouge">executable object program</code> và lưu trữ dưới dạng <code class="highlighter-rouge">binary file </code> trên đĩa cứng. Việc chuyển đổi này thông qua một chương trình gọi là trình biên dịch, trên các hệ thống linux ta có thể biên dịch một chương trình c thông qua lệnh sau:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">linux&gt; gcc <span class="nt">-o</span> hello hello.c</code></pre></figure>
+
+<p><img src="http://sv1.upsieutoc.com/2018/02/02/imagecbfcf4ee122224b9.png" alt="Hình 2" /></p>
+
+
+  </div>
+
+</article>
+
+</section>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container footer-content">
+    Made with <i class ="fa fa-heart"></i> by Hemang Kumar<br>
+    Powered By vnc0d9r
+  </div>
+</nav>
+
+  </body>
+
+</html>
