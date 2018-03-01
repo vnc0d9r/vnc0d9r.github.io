@@ -5,9 +5,113 @@
     <description>&lt;h1&gt;Vnc0d9r&lt;/h1&gt;&lt;h3&gt;Tổng hợp kiến thức về  an toàn thông tin&lt;/h3&gt;Thấy hay thì chia sẻ nhé :3!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 02 Feb 2018 23:16:29 +0700</pubDate>
-    <lastBuildDate>Fri, 02 Feb 2018 23:16:29 +0700</lastBuildDate>
+    <pubDate>Thu, 01 Mar 2018 21:52:26 +0700</pubDate>
+    <lastBuildDate>Thu, 01 Mar 2018 21:52:26 +0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Vượt qua giao thức ssl sử dụng sslstrip</title>
+        <description>
+</description>
+        <pubDate>Thu, 01 Mar 2018 17:52:43 +0700</pubDate>
+        <link>http://localhost:4000/hacking/2018/03/01/vuot-qua-giao-thuc-ssl-su-dung-sslstrip.html</link>
+        <guid isPermaLink="true">http://localhost:4000/hacking/2018/03/01/vuot-qua-giao-thuc-ssl-su-dung-sslstrip.html</guid>
+        
+        
+        <category>hacking</category>
+        
+      </item>
+    
+      <item>
+        <title>Cơ chế hoạt động của https</title>
+        <description>&lt;p&gt;Nếu bạn là người để ý thì khi truy cập internet trên trình duyệt, trên phần địa chỉ web bao giờ cũng bắt đầu là &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt; hoặc &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;. HTTPS là giao thức truy cập web bảo mật do được tích hợp giao thức SSL hoặc TSL mã hóa gói tin khi truyền đi thay vì dạng plant-text như của http. Dạng plant-text nghĩa là khi bạn đăng nhập vào một trang web như facebook chẳng hạn thì username và password của bạn được truyền đi theo dạng mà ai cũng đọc được, do đó nếu hacker có thể  lấy được dữ liệu bạn gửi đi từ trình duyệt thì tất nhiên sẽ biết được tài khoản của bạn. Việc này cũng như bạn gửi thư vậy, http là bạn gửi thư đi luôn còn https là bạn cho thư vào hộp, khóa lại rồi mới gửi đi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.hacking-tutorial.com/pics/blog/network-sniffing-use-wireshark/wireshark7.jpg&quot; alt=&quot;Hình 1 - tài khoản (v4L-justfortryv4L) đã bị lộ)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ngược lại, https mã hóa tài khoản của bạn sau đó mới gửi đi, do đó kể  cả hacker có lấy được dữ liệu mà không có chìa khóa thì cũng không thể làm gì được. Nhưng bầy giờ có một vấn đề phát sinh là làm sao mình gửi cái chìa khóa đó đi được, vì dữ liệu đã mã hóa thì muốn đọc được thì phải giải mã. Gửi đi làm sao để hacker không biết được hoặc biết cũng không làm gì được, à lúc đó chúng ta phải mã hóa cái key đó!. Vậy phải mã hóa làm sao cho hợp lí? Muốn mã hóa chúng ta lại phải tạo key, bây giờ muốn bảo vệ cái key này chẳng nhẽ chúng ta lại tạo thêm một cái key nữa sao, cư như thế thì tạo đến bao giờ?, nên nguời ta nghĩ ra một cách mã hóa gọi là mã hóa bất đối xứng. Ở loại mã hóa này, ta sẽ có 2 loại key là private key (chỉ mình người nhận biết) và publish key (công khai, ai cũng biết). Ta dùng publish key để mã hóa còn người nhận dùng private key để giải mã. Như vậy ai cũng có thể mã hóa thông điệp để gửi cho nguời nhận nhưng chỉ mình anh ta mới có thể đọc được nội dung của các thông điệp.
+Như vậy, gần như mọi vấn đề đã được giải quyết để việc truyền tin được an toàn, tuy nhiên ta vẫn thấy rằng vẫn còn kẽ hở ở đây. Đó là làm sao biết được là cái publish key kia là của đúng nguời nhận, nhỡ nó là “hàng nhái” thì sao?. Cái này cũng giống như khi bạn mua hàng ngoài chợ, nếu bạn không phải “người mua hàng thông minh” thì bạn dễ mua phải hàng giả vì luôn có cách làm nó rất giống hàng thật. Để giải quyết vấn đề này, người ta nghĩ ra một cái gọi là “chữ kí số” có vai trò như là con dấu hoặc tem chính hãng ngoài đời thật. Chữ kí số bao gồm một số thuật toán sau:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Thuật toán chọn khóa&lt;/li&gt;
+  &lt;li&gt;Thuật toán tạo chữ ký&lt;/li&gt;
+  &lt;li&gt;Thuật toán kiểm tra chứ ký&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ta có một ví dụ sau (lấy từ wikipedia.org):
+Bob muốn gửi thông tin cho Alice và muốn Alice biết thông tin đó thực sự do chính Bob gửi. Bob gửi cho Alice bản tin kèm với chữ ký số. Chữ ký này được tạo ra với khóa bí mật (private key) của Bob. Khi nhận được bản tin, Alice kiểm tra sự thống nhất giữa bản tin và chữ ký bằng thuật toán kiểm tra sử dụng khóa công cộng của Bob. Bản chất của thuật toán tạo chữ ký đảm bảo nếu chỉ cho trước bản tin, rất khó (gần như không thể) tạo ra được chữ ký của Bob nếu không biết khóa bí mật của Bob. Nếu phép thử cho kết quả đúng thì Alice có thể tin tưởng rằng bản tin thực sự do Bob gửi.&lt;/p&gt;
+
+&lt;h2 id=&quot;chuyện-gì-sẽ-diễn-ra-khi-bạn-truy-cập-vào-một-site-https&quot;&gt;Chuyện gì sẽ diễn ra khi bạn truy cập vào một site https&lt;/h2&gt;
+
+&lt;p&gt;Câu chuyện này có thể được mô tả theo hình dưới dây (theo nguồn stackoverflow.com):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3-ap-southeast-1.amazonaws.com/kipalog.com/WRNrD.png_q1sk0vahes&quot; alt=&quot;Hình 2 - From browser to HTTPS site&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Các quá trình diễn ra:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Browser truy cập một trang web https mà ở đây là https://payment.com&lt;/li&gt;
+  &lt;li&gt;Server của payment.com sẽ trả về certificate (cái này có vai trò như chứng minh thư của chúng ta, xác định một trang web có đúng là nó hay giả mạo) của trang này. Trong certificate chứa publish key của trang dùng để mã hóa K ở bước 4. K đây chính là khóa để mã hóa dữ liệu trao đổi giữa browser và server của payment.com&lt;/li&gt;
+  &lt;li&gt;Browser sẽ kiểm chứng certificate (bằng cách chạy thuật toán kiểm tra chữ ký). Quá trình này giúp browser xác định https://payment.com là thật hay giả.&lt;/li&gt;
+  &lt;li&gt;Sau khi kiểm chứng được certificate, browser sẽ tự sinh ra 1 khóa K. Khóa K sẽ được dùng để mã hóa tất cả các dữ liệu giữa browser và payment.com sau này. Sau đó khóa K sẽ được mã hóa để gửi cho payment.com để bên này giải mã dữ liệu bằng mã hóa bất đối xứng.&lt;/li&gt;
+  &lt;li&gt;Sau khi nhận được khóa K, payment,com giải mã bằng private key của mình.&lt;/li&gt;
+  &lt;li&gt;Payment.com và browser dùng khóa K để mã hóa toàn bộ dữ liệu liên lạc sau này&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Certificate là một khối dữ liệu bao gồm rất nhiều thông tin về payment.com. Các thông tin này bao gồm:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tên domain&lt;/li&gt;
+  &lt;li&gt;Tên công ty sở hữu&lt;/li&gt;
+  &lt;li&gt;Thời gian certificate được cấp&lt;/li&gt;
+  &lt;li&gt;Thời hạn certificate&lt;/li&gt;
+  &lt;li&gt;Public key&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;làm-thế-nào-browser-kiểm-chứng-được-certificate-ở-bước-3&quot;&gt;Làm thế nào browser kiểm chứng được certificate ở bước 3&lt;/h2&gt;
+
+&lt;p&gt;Bất cứ người nào đứng giữa browser và payment.com đều có thể làm giả certificate và public key. Bằng cách làm giả certificate, người đứng giữa có thể giả dạng payment.com. Bằng cách giả public key, người đứng giữa có thể dùng khóa private của mình để xem thông tin truyển tải giữa 2 bên. Vậy làm thế nào để ngăn chặn cách tấn công này. Cách giải quyết là: CA (Certificate Authority).
+CA là gì? Làm gì?&lt;/p&gt;
+
+&lt;p&gt;Trong thực tế, để chứng minh một ai đó trình độ đại học, trường đại học nơi người đó học sẽ cấp cho họ một tấm bằng. Do tấm bằng đó có thể bị làm giả, ta cần một đơn vị chứng minh đó là bằng thật. CA chính là người chứng minh certificate mà payment.com cung cấp là thật! CA bán dịch vụ chứng thực đó bằng cách ký chứng minh rằng certificate của payment.com là thật&lt;/p&gt;
+
+&lt;p&gt;Certificate chứng thực cho payment.com sẽ được CA ký bằng khóa bí mật của CA. Khóa này chỉ có CA biết và do vậy việc chữ ký là an toàn. payment.com sẽ gửi cho user certificate đã được ký bởi CA cùng với khóa công khai PK2 của khóa bí mật CA dùng để ký certificate. Browser sẽ tiến hành kiểm tra certificate này như bình thường dùng khóa công khai PK2 của CA.&lt;/p&gt;
+
+&lt;p&gt;Đến đây vấn đề chưa thực sự được giải quyết vì, khóa công khai của CA cũng hoàn toàn có thể bị làm giả và do vậy certificate hoàn toàn có thể là giả! Giống như thực tế người chứng minh cho tấm bằng đại học cũng có thể bị làm giả. Để chắc chắn việc này, ta có thể ký chứng thực certificate do CA ký là thật. Cách làm có thể hoàn toàn tương tự là dùng khóa bí mật nào đó và ký tiếp và đính kèm khóa công khai PK3 với certificate sau khi được ký. Cứ thế ta có một dãy các certificate và khóa công khai mà certificate sau chứng thực cho certificate trước. Do bản chất đệ quy, ta cần điểm dừng là một certificate mà ta hoàn toàn tin tưởng. Đến đây ta có khái niệm root certificate.&lt;/p&gt;
+
+&lt;h3 id=&quot;root-certificate&quot;&gt;Root certificate&lt;/h3&gt;
+
+&lt;p&gt;Root certificate là certificate mà ta hoàn toàn tin tưởng. Khi có certificate này, ta có thể tin tưởng những certificate mà được chứng thực bởi certificate này là hoàn toàn hợp lệ (giống trong thực tế là cơ quan công chứng!). Mỗi OS và browser có một danh sách các certificate mà OS và browser đó tin tưởng.&lt;/p&gt;
+
+&lt;p&gt;Firefox tin tưởng các certificate có danh sách tại: https://wiki.mozilla.org/CA:IncludedCAs&lt;/p&gt;
+
+&lt;p&gt;Do root certificate là certificate cuối cùng dùng để chứng thực các certificate trong chuỗi, khóa bí mật của certificate này cần được bảo vệ nghiêm ngặt. Bất cứ công ty cung cấp dịch vụ CA nào bị tấn công và bị mất khóa bí mật của root certificate đều rất nguy hiểm, bởi vì hackers có thể dùng khóa đó để ký certificate ở bước cuối cùng. Do browser và OS tin tưởng certificate này nên tất cả certificate, không nhất thiết do CA bị hack cung cấp, đều có thể bị làm giả. Các CA do vậy dùng rất nhiều công sức để bảo vệ thật kín đáo khóa bí mật này. Kinh doanh chứng thực CA là kinh doanh về mặt lòng tin, CA hứa sẽ đảm bảo tốt nhất khóa bí mật của họ và ta trả tiền để họ dùng khóa bí mật của họ ký.&lt;/p&gt;
+
+&lt;p&gt;Theo đồn đại của giang hồ, &lt;a href=&quot;https://security.stackexchange.com/questions/24896/how-do-certification-authorities-store-their-private-root-keys&quot;&gt;verisign dùng cửa lock dày và các tay súng chuyên nghiệp cùng hệ thống truy cập phức tạp để bảo vệ khóa bí mật này&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;certificate-trong-thực-tế&quot;&gt;Certificate trong thực tế&lt;/h3&gt;
+
+&lt;p&gt;Ta có thể xem certificate của bất cứ trang nào sử dụng HTTPS bằng trình duyệt như sau:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://uphinhnhanh.com/images/2018/03/01/sslFacebook.gif&quot; alt=&quot;Hình 3 - Lấy thông tin certificate&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Facebook certificate được ký bởi DigiCert High Assurance CA-3. Bản thân CA-3 được chứng thực bởi EV RootCA.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kipalog.com/posts/https-hoat-dong-nhu-the-nao&quot;&gt;Kipalog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[Wiki][https://vi.wikipedia.org/wiki/Ch%E1%BB%AF_k%C3%BD_s%E1%BB%91]&lt;/li&gt;
+  &lt;li&gt;[Stackoverflow][https://stackoverflow.com/questions/470523/how-does-ssl-really-work]&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Thu, 01 Mar 2018 17:52:43 +0700</pubDate>
+        <link>http://localhost:4000/networking/2018/03/01/https-hoat-dong-nhu-the-nao.html</link>
+        <guid isPermaLink="true">http://localhost:4000/networking/2018/03/01/https-hoat-dong-nhu-the-nao.html</guid>
+        
+        
+        <category>networking</category>
+        
+      </item>
     
       <item>
         <title>Biên dịch chương trình trên c</title>
@@ -33,8 +137,10 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;linux&amp;gt; gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; hello hello.c&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://sv1.upsieutoc.com/2018/02/02/imagecbfcf4ee122224b9.png&quot; alt=&quot;Hình 2&quot; /&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&quot;http://sv1.upsieutoc.com/2018/02/02/imagecbfcf4ee122224b9.png&quot; alt=&quot;Hình 2&quot; /&gt;
+Như chúng ta thấy trình biên dịch chuyển đổi mã nguồn qua bốn bước như hình trên (preprocessor, compiler, assembler, và linker) để tạo ra file thực thi là &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;preprocessing-phase&quot;&gt;Preprocessing phase&lt;/h2&gt;
+&lt;p&gt;Bước này hay còn gọi là bước tiền xử lí, trình biên dịch sẽ thay đổi mã nguồn ban đầu bắt đầu từ các dòng có kí tự &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt;, ví dụ như dòng &lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/code&gt; nói cho trình biên dịch biết là phải đọc nội dung trong file header &lt;code class=&quot;highlighter-rouge&quot;&gt;studio.h&lt;/code&gt; sau đó chèn nội dung này vào file &lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt; ban đầu. Cuối cùng ta thu được file với đuôi &lt;code class=&quot;highlighter-rouge&quot;&gt;.i&lt;/code&gt; như trên.&lt;/p&gt;
 </description>
         <pubDate>Fri, 02 Feb 2018 00:49:43 +0700</pubDate>
         <link>http://localhost:4000/programming/2018/02/02/bien-dich-chuong-trinh-tren-c.html</link>

@@ -35,4 +35,6 @@ Chương trình `hello` được bắt đầu như là một chương trình c b
 linux> gcc -o hello hello.c
 {% endhighlight %}
 ![Hình 2](http://sv1.upsieutoc.com/2018/02/02/imagecbfcf4ee122224b9.png)
-
+Như chúng ta thấy trình biên dịch chuyển đổi mã nguồn qua bốn bước như hình trên (preprocessor, compiler, assembler, và linker) để tạo ra file thực thi là `hello`.
+## Preprocessing phase ##
+Bước này hay còn gọi là bước tiền xử lí, trình biên dịch sẽ thay đổi mã nguồn ban đầu bắt đầu từ các dòng có kí tự `#`, ví dụ như dòng `#include <stdio.h>` nói cho trình biên dịch biết là phải đọc nội dung trong file header `studio.h` sau đó chèn nội dung này vào file `text` ban đầu. Cuối cùng ta thu được file với đuôi `.i` như trên.

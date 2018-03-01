@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Vnc0d9r" property="og:site_name">
+
+  <meta content="Cơ chế hoạt động của https" property="og:title">
+
+
+  <meta content="article" property="og:type">
+
+
+  <meta content="<h1>Vnc0d9r</h1><h3>Tổng hợp kiến thức về  an toàn thông tin</h3>Thấy hay thì chia sẻ nhé :3!" property="og:description">
+
+
+  <meta content="http://localhost:4000/networking/2018/03/01/https-hoat-dong-nhu-the-nao.html" property="og:url">
+
+
+  <meta content="2018-03-01T17:52:43+07:00" property="article:published_time">
+  <meta content="http://localhost:4000/about/" property="article:author">
+
+
+  <meta property="og:image" content="">
+
+
+  
+  <meta content="networking" property="article:section">
+  
+
+
+  
+
+  <title>Cơ chế hoạt động của https</title>
+  <meta name="description" content="Nếu bạn là người để ý thì khi truy cập internet trên trình duyệt, trên phần địa chỉ web bao giờ cũng bắt đầu là http hoặc https. HTTPS là giao thức truy cập ...">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/main.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Gentium+Basic:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
+  <link rel="canonical" href="http://localhost:4000/networking/2018/03/01/https-hoat-dong-nhu-the-nao.html">
+  <link rel="alternate" type="application/rss+xml" title="Vnc0d9r" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body>
+<!--<a href="https://github.com/vnc0d9r"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 9999;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+-->
+<section>
+<nav class="navbar navbar-default navbar-fixed-top">
+
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Vnc0d9r</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        
+        <li><a href="/about/">About</a></li>
+
+        
+
+        
+        
+        <li><a href="/download/">Download</a></li>
+
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+
+
+      </ul>
+
+    <!--  <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Know More!</a></li>
+
+      </ul>-->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</section>
+
+<section>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="post-title-main" itemprop="name headline">Cơ chế hoạt động của https</h1>
+      <p class="post-meta"><time datetime="2018-03-01T17:52:43+07:00" itemprop="datePublished">Mar 1, 2018</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">vnc0d9r</span></span></p>
+      
+    </div>
+
+</div>
+
+
+  <div class="post-content container" itemprop="articleBody">
+    <p>Nếu bạn là người để ý thì khi truy cập internet trên trình duyệt, trên phần địa chỉ web bao giờ cũng bắt đầu là <code class="highlighter-rouge">http</code> hoặc <code class="highlighter-rouge">https</code>. HTTPS là giao thức truy cập web bảo mật do được tích hợp giao thức SSL hoặc TSL mã hóa gói tin khi truyền đi thay vì dạng plant-text như của http. Dạng plant-text nghĩa là khi bạn đăng nhập vào một trang web như facebook chẳng hạn thì username và password của bạn được truyền đi theo dạng mà ai cũng đọc được, do đó nếu hacker có thể  lấy được dữ liệu bạn gửi đi từ trình duyệt thì tất nhiên sẽ biết được tài khoản của bạn. Việc này cũng như bạn gửi thư vậy, http là bạn gửi thư đi luôn còn https là bạn cho thư vào hộp, khóa lại rồi mới gửi đi.</p>
+
+<p><img src="https://www.hacking-tutorial.com/pics/blog/network-sniffing-use-wireshark/wireshark7.jpg" alt="Hình 1 - tài khoản (v4L-justfortryv4L) đã bị lộ)" /></p>
+
+<p>Ngược lại, https mã hóa tài khoản của bạn sau đó mới gửi đi, do đó kể  cả hacker có lấy được dữ liệu mà không có chìa khóa thì cũng không thể làm gì được. Nhưng bầy giờ có một vấn đề phát sinh là làm sao mình gửi cái chìa khóa đó đi được, vì dữ liệu đã mã hóa thì muốn đọc được thì phải giải mã. Gửi đi làm sao để hacker không biết được hoặc biết cũng không làm gì được, à lúc đó chúng ta phải mã hóa cái key đó!. Vậy phải mã hóa làm sao cho hợp lí? Muốn mã hóa chúng ta lại phải tạo key, bây giờ muốn bảo vệ cái key này chẳng nhẽ chúng ta lại tạo thêm một cái key nữa sao, cư như thế thì tạo đến bao giờ?, nên nguời ta nghĩ ra một cách mã hóa gọi là mã hóa bất đối xứng. Ở loại mã hóa này, ta sẽ có 2 loại key là private key (chỉ mình người nhận biết) và publish key (công khai, ai cũng biết). Ta dùng publish key để mã hóa còn người nhận dùng private key để giải mã. Như vậy ai cũng có thể mã hóa thông điệp để gửi cho nguời nhận nhưng chỉ mình anh ta mới có thể đọc được nội dung của các thông điệp.
+Như vậy, gần như mọi vấn đề đã được giải quyết để việc truyền tin được an toàn, tuy nhiên ta vẫn thấy rằng vẫn còn kẽ hở ở đây. Đó là làm sao biết được là cái publish key kia là của đúng nguời nhận, nhỡ nó là “hàng nhái” thì sao?. Cái này cũng giống như khi bạn mua hàng ngoài chợ, nếu bạn không phải “người mua hàng thông minh” thì bạn dễ mua phải hàng giả vì luôn có cách làm nó rất giống hàng thật. Để giải quyết vấn đề này, người ta nghĩ ra một cái gọi là “chữ kí số” có vai trò như là con dấu hoặc tem chính hãng ngoài đời thật. Chữ kí số bao gồm một số thuật toán sau:</p>
+
+<ol>
+  <li>Thuật toán chọn khóa</li>
+  <li>Thuật toán tạo chữ ký</li>
+  <li>Thuật toán kiểm tra chứ ký</li>
+</ol>
+
+<p>Ta có một ví dụ sau (lấy từ wikipedia.org):
+Bob muốn gửi thông tin cho Alice và muốn Alice biết thông tin đó thực sự do chính Bob gửi. Bob gửi cho Alice bản tin kèm với chữ ký số. Chữ ký này được tạo ra với khóa bí mật (private key) của Bob. Khi nhận được bản tin, Alice kiểm tra sự thống nhất giữa bản tin và chữ ký bằng thuật toán kiểm tra sử dụng khóa công cộng của Bob. Bản chất của thuật toán tạo chữ ký đảm bảo nếu chỉ cho trước bản tin, rất khó (gần như không thể) tạo ra được chữ ký của Bob nếu không biết khóa bí mật của Bob. Nếu phép thử cho kết quả đúng thì Alice có thể tin tưởng rằng bản tin thực sự do Bob gửi.</p>
+
+<h2 id="chuyện-gì-sẽ-diễn-ra-khi-bạn-truy-cập-vào-một-site-https">Chuyện gì sẽ diễn ra khi bạn truy cập vào một site https</h2>
+
+<p>Câu chuyện này có thể được mô tả theo hình dưới dây (theo nguồn stackoverflow.com):</p>
+
+<p><img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/WRNrD.png_q1sk0vahes" alt="Hình 2 - From browser to HTTPS site" /></p>
+
+<p>Các quá trình diễn ra:</p>
+
+<ol>
+  <li>Browser truy cập một trang web https mà ở đây là https://payment.com</li>
+  <li>Server của payment.com sẽ trả về certificate (cái này có vai trò như chứng minh thư của chúng ta, xác định một trang web có đúng là nó hay giả mạo) của trang này. Trong certificate chứa publish key của trang dùng để mã hóa K ở bước 4. K đây chính là khóa để mã hóa dữ liệu trao đổi giữa browser và server của payment.com</li>
+  <li>Browser sẽ kiểm chứng certificate (bằng cách chạy thuật toán kiểm tra chữ ký). Quá trình này giúp browser xác định https://payment.com là thật hay giả.</li>
+  <li>Sau khi kiểm chứng được certificate, browser sẽ tự sinh ra 1 khóa K. Khóa K sẽ được dùng để mã hóa tất cả các dữ liệu giữa browser và payment.com sau này. Sau đó khóa K sẽ được mã hóa để gửi cho payment.com để bên này giải mã dữ liệu bằng mã hóa bất đối xứng.</li>
+  <li>Sau khi nhận được khóa K, payment,com giải mã bằng private key của mình.</li>
+  <li>Payment.com và browser dùng khóa K để mã hóa toàn bộ dữ liệu liên lạc sau này</li>
+</ol>
+
+<p>Certificate là một khối dữ liệu bao gồm rất nhiều thông tin về payment.com. Các thông tin này bao gồm:</p>
+
+<ul>
+  <li>Tên domain</li>
+  <li>Tên công ty sở hữu</li>
+  <li>Thời gian certificate được cấp</li>
+  <li>Thời hạn certificate</li>
+  <li>Public key</li>
+</ul>
+
+<h2 id="làm-thế-nào-browser-kiểm-chứng-được-certificate-ở-bước-3">Làm thế nào browser kiểm chứng được certificate ở bước 3</h2>
+
+<p>Bất cứ người nào đứng giữa browser và payment.com đều có thể làm giả certificate và public key. Bằng cách làm giả certificate, người đứng giữa có thể giả dạng payment.com. Bằng cách giả public key, người đứng giữa có thể dùng khóa private của mình để xem thông tin truyển tải giữa 2 bên. Vậy làm thế nào để ngăn chặn cách tấn công này. Cách giải quyết là: CA (Certificate Authority).
+CA là gì? Làm gì?</p>
+
+<p>Trong thực tế, để chứng minh một ai đó trình độ đại học, trường đại học nơi người đó học sẽ cấp cho họ một tấm bằng. Do tấm bằng đó có thể bị làm giả, ta cần một đơn vị chứng minh đó là bằng thật. CA chính là người chứng minh certificate mà payment.com cung cấp là thật! CA bán dịch vụ chứng thực đó bằng cách ký chứng minh rằng certificate của payment.com là thật</p>
+
+<p>Certificate chứng thực cho payment.com sẽ được CA ký bằng khóa bí mật của CA. Khóa này chỉ có CA biết và do vậy việc chữ ký là an toàn. payment.com sẽ gửi cho user certificate đã được ký bởi CA cùng với khóa công khai PK2 của khóa bí mật CA dùng để ký certificate. Browser sẽ tiến hành kiểm tra certificate này như bình thường dùng khóa công khai PK2 của CA.</p>
+
+<p>Đến đây vấn đề chưa thực sự được giải quyết vì, khóa công khai của CA cũng hoàn toàn có thể bị làm giả và do vậy certificate hoàn toàn có thể là giả! Giống như thực tế người chứng minh cho tấm bằng đại học cũng có thể bị làm giả. Để chắc chắn việc này, ta có thể ký chứng thực certificate do CA ký là thật. Cách làm có thể hoàn toàn tương tự là dùng khóa bí mật nào đó và ký tiếp và đính kèm khóa công khai PK3 với certificate sau khi được ký. Cứ thế ta có một dãy các certificate và khóa công khai mà certificate sau chứng thực cho certificate trước. Do bản chất đệ quy, ta cần điểm dừng là một certificate mà ta hoàn toàn tin tưởng. Đến đây ta có khái niệm root certificate.</p>
+
+<h3 id="root-certificate">Root certificate</h3>
+
+<p>Root certificate là certificate mà ta hoàn toàn tin tưởng. Khi có certificate này, ta có thể tin tưởng những certificate mà được chứng thực bởi certificate này là hoàn toàn hợp lệ (giống trong thực tế là cơ quan công chứng!). Mỗi OS và browser có một danh sách các certificate mà OS và browser đó tin tưởng.</p>
+
+<p>Firefox tin tưởng các certificate có danh sách tại: https://wiki.mozilla.org/CA:IncludedCAs</p>
+
+<p>Do root certificate là certificate cuối cùng dùng để chứng thực các certificate trong chuỗi, khóa bí mật của certificate này cần được bảo vệ nghiêm ngặt. Bất cứ công ty cung cấp dịch vụ CA nào bị tấn công và bị mất khóa bí mật của root certificate đều rất nguy hiểm, bởi vì hackers có thể dùng khóa đó để ký certificate ở bước cuối cùng. Do browser và OS tin tưởng certificate này nên tất cả certificate, không nhất thiết do CA bị hack cung cấp, đều có thể bị làm giả. Các CA do vậy dùng rất nhiều công sức để bảo vệ thật kín đáo khóa bí mật này. Kinh doanh chứng thực CA là kinh doanh về mặt lòng tin, CA hứa sẽ đảm bảo tốt nhất khóa bí mật của họ và ta trả tiền để họ dùng khóa bí mật của họ ký.</p>
+
+<p>Theo đồn đại của giang hồ, <a href="https://security.stackexchange.com/questions/24896/how-do-certification-authorities-store-their-private-root-keys">verisign dùng cửa lock dày và các tay súng chuyên nghiệp cùng hệ thống truy cập phức tạp để bảo vệ khóa bí mật này</a>.</p>
+
+<h3 id="certificate-trong-thực-tế">Certificate trong thực tế</h3>
+
+<p>Ta có thể xem certificate của bất cứ trang nào sử dụng HTTPS bằng trình duyệt như sau:</p>
+
+<p><img src="https://uphinhnhanh.com/images/2018/03/01/sslFacebook.gif" alt="Hình 3 - Lấy thông tin certificate" /></p>
+
+<p>Facebook certificate được ký bởi DigiCert High Assurance CA-3. Bản thân CA-3 được chứng thực bởi EV RootCA.</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li><a href="https://kipalog.com/posts/https-hoat-dong-nhu-the-nao">Kipalog</a></li>
+  <li>[Wiki][https://vi.wikipedia.org/wiki/Ch%E1%BB%AF_k%C3%BD_s%E1%BB%91]</li>
+  <li>[Stackoverflow][https://stackoverflow.com/questions/470523/how-does-ssl-really-work]</li>
+</ol>
+
+  </div>
+
+</article>
+
+</section>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container footer-content">
+    Made with <i class ="fa fa-heart"></i> by Hemang Kumar<br>
+    Powered By vnc0d9r
+  </div>
+</nav>
+
+  </body>
+
+</html>
