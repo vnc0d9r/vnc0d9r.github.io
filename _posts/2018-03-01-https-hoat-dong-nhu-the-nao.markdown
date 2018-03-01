@@ -75,5 +75,5 @@ Facebook certificate được ký bởi DigiCert High Assurance CA-3. Bản thâ
 ## References ##
 
 1. [Kipalog](https://kipalog.com/posts/https-hoat-dong-nhu-the-nao)
-2. [Wiki][https://vi.wikipedia.org/wiki/Ch%E1%BB%AF_k%C3%BD_s%E1%BB%91]
-3. [Stackoverflow][https://stackoverflow.com/questions/470523/how-does-ssl-really-work]
+2. [Wiki](https://vi.wikipedia.org/wiki/Ch%E1%BB%AF_k%C3%BD_s%E1%BB%91)
+3. [Stackoverflow](https://stackoverflow.com/questions/470523/how-does-ssl-really-work)
