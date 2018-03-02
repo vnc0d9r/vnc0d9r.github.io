@@ -70,7 +70,7 @@ Ta có thể xem certificate của bất cứ trang nào sử dụng HTTPS bằn
 
 ![Hình 3 - Lấy thông tin certificate](https://uphinhnhanh.com/images/2018/03/01/sslFacebook.gif)
 
-Facebook certificate được ký bởi DigiCert High Assurance CA-3. Bản thân CA-3 được chứng thực bởi EV RootCA.
+Facebook certificate được ký bởi DigiCert High Assurance CA-3. Bản thân CA-3 được chứng thực bởi EV RootCA. Một chuối đệ quy các certificate được gọi là một `certificate chain` bắt đầu từ Root certificate đến site-end certificate.
 
 ## References ##
 
